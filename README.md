@@ -1,4 +1,4 @@
-# GenerativeAI
+# NLP
 # STEP 1: Text Preprocessing Techniques
 
  1. **Lowercasing**
