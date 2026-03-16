@@ -1,42 +1,44 @@
-# NLP
-# STEP 1: Text Preprocessing Techniques
+# NLP Text Preprocessing & Feature Extraction Workshop
 
- 1. **Lowercasing**
+A comprehensive collection of Jupyter notebooks demonstrating essential Natural Language Processing (NLP) techniques for text preprocessing and feature extraction. Perfect for beginners and intermediate practitioners looking to master text data preparation for machine learning models.
 
- 2. **Punctuation Handling**
+## Topics Covered
 
- 3. **Stopword Removal**
+### Part 1: Text Preprocessing (IMDB Dataset)
+- **Data Loading**: Multiple methods (Google Drive, Kaggle API, direct download)
+- **Text Cleaning**:
+  - Lowercasing & Punctuation removal
+  - HTML tag & URL removal
+  - Emoji handling (regex & emoji library)
+  - Chat shortform conversion (ASAP → As Soon As Possible)
+  - Spelling correction with TextBlob
+- **Tokenization**:
+  - Split function (limitations)
+  - Regular expressions
+  - NLTK tokenizers (word_tokenize, sent_tokenize)
+  - spaCy tokenization
+- **Normalization**:
+  - Stemming (PorterStemmer) - fast but aggressive
+  - Lemmatization (WordNetLemmatizer) - slower but accurate
+- **Stopword Removal**: NLTK stopwords corpus
 
- 4. **Tokenization**
+### Part 2: Feature Extraction
+- **Bag of Words (BoW)**: CountVectorizer implementation
+- **N-grams**: Unigrams, bigrams, and trigrams
+- **TF-IDF**: Term Frequency-Inverse Document Frequency
+- **Advanced Embeddings**: References to Word2Vec, GloVe, FastText
 
- 5. **Stemming**
-
- 6. **Lemmatization**
-
- 7. **URL Removal**
-
- 8. **HTML Tag Removal**
-
- 9. **Emoji Handling**
-
- 10. **Chat Shortform Handling**
-
- 11. **Incorrect Text Handling**
-
-# STEP 1: Test-Representation Word-Embedding
-
-## Basic :    
-https://colab.research.google.com/drive/1UOhhpeWfdx994mQubrqRZ6eesOm58Tz5?usp=sharing
- 1. **BoW**
-
- 2. **N-grams**
-
- 3. **TF-IDF**
-
-## Advance :
-
+### Part 3: Advance 
  1. **Word2vector** : https://colab.research.google.com/drive/1tzN3fLysDmGUVT_tk5iZNzo8dusrhvXh?usp=sharing
-
  2. **Glove** : https://colab.research.google.com/drive/1PzlX4H5R1wrUbRbL8xHWLINNJNfZR-vI?usp=sharing
-
  3. **FastText** : https://colab.research.google.com/drive/1yQ3NPbzJoiOKb2ic8RNBecvwWkaeC5Sn?usp=sharing
+
+## Installation
+  git clone https://github.com/yourusername/nlp-preprocessing-workshop.git
+  cd nlp-preprocessing-workshop
+
+
+# Install dependencies
+pip install pandas numpy nltk spacy textblob scikit-learn kagglehub
+python -m spacy download en_core_web_sm
+python -m nltk.downloader all
